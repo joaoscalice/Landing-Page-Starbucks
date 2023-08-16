@@ -125,3 +125,62 @@ iframe{
     display: block;
     margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cabecalho-logo {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .cabecalho-menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .conteudo{
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .conteudo-principal-escrito-titulo{
+        font-size: 32px;
+    }
+
+    .conteudo-principal-escrito-subtitulo{
+        font-size: 24px;
+        padding-top: 12px;
+    }
+
+    .conteudo-principal-escrito-paragrafo{
+        font-size: 18px;
+    }
+
+    .imagem{
+        width: auto;
+        height: 350px;
+        padding-top: 24px;
+    }
+
+    .paragrafo-video{
+        padding-top: 24px;
+        font-size: 32px;
+    }
+
+    iframe{
+        width: 350px;
+        height: 350px;
+    }
+
+    .rodape-imagem {
+        width: 75px;
+        height: auto;
+    }
+}
