@@ -165,16 +165,21 @@ iframe{
 
     .imagem{
         width: auto;
-        height: 350px;
+        height: 245px;
         padding-top: 24px;
     }
 
+    img{
+        border-radius: 0px;
+    }
+
     .paragrafo-video{
-        padding-top: 24px;
+        padding-top: 56px;
         font-size: 32px;
     }
 
     iframe{
+        padding-top: 24px;
         width: 350px;
         height: 350px;
     }
