@@ -102,6 +102,15 @@ img{
     border-radius: 30px;
 }
 
+.conteudo-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
 .paragrafo-video{
     padding-top: 64px;
     font-family: 'Raleway', sans-serif;
@@ -124,6 +133,19 @@ iframe{
     cursor: pointer;
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 1140px) {
+    .conteudo{
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .paragrafo-video{
+        padding-top: 56px;
+        font-size: 32px;
+    }
+
 }
 
 @media (max-width: 768px) {
