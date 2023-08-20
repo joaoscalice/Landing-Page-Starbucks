@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: rgb(245,221,218);
+    background: linear-gradient(100deg, rgba(245,221,218,1) 0%, rgba(213,234,245,1) 50%);
+} 
+
+a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: inherit;
+}
+
+.cabecalho{
+    display: flex;   
+    flex-direction: row;  
+    justify-content: space-around;  
+    align-items: center;
+    padding: 24px; 
+}   
+
+.cabecalho-logo{
+    width: 450px;
+    height: 100px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 70px;
+}
+
+.cabecalho-menu a{
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+    
+
+.cabecalho-menu a:hover {
+    color: #00a233;
+}
+
+.conteudo{
+    margin-bottom: 48px;
+    padding-top: 40px;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.conteudo-principal-titulo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    text-align: center;
+    padding-bottom: 32px;
+    padding-top: 16px;
+}
+
+.conteudo-principal-escrito{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 32px;
+}
+
+.conteudo-principal-escrito p{
+    padding: 24px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.719);
+    box-shadow:  30px 30px 71px #f0ebeb,
+                -30px -30px 71px #ffffff;
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.conteudo-secundario-titulo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 72px;
+}
+
+.whatsapp{
+    padding: 32px;
+}
+
+.whatsapp-imagem{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.rodape{
+    padding: 32px;
+}
+
+.rodape-imagem{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px){
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cabecalho-logo {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .cabecalho-menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .conteudo{
+        margin-bottom: 32px;
+        padding-top: 24px;
+    }
+
+    .conteudo-principal-titulo{
+        font-size: 24px;
+        padding-bottom: 32px;
+        padding-top: 16px;
+    }
+
+    .conteudo-principal-escrito {
+        font-size: 16px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .conteudo-secundario-titulo{
+        font-size: 24px;
+    }
+
+    .rodape-imagem {
+        width: 75px;
+        height: auto;
+    }
+}
